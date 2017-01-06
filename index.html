@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reel Therapy</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Work+Sans:200" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <section class="navigation">
+      <button class="nav-button" type="button" name="home">HOME</button>
+      <button class="nav-button" type="button" name="location">LOCATION</button>
+    </section>
+    <a class="phone" href="tel:+1-281-508-2566">281-508-2566</a>
+  </header>
+  <div class="wrapper">
+    <h1 class="name">Colleen Neal</h1>
+    <h1 class="title">MS, LPC, NCC</h1>
+    <section class="main-content">
+      <div class="about">
+        <div class="blur"></div>
+        <div class="content">
+          <img src="img/selfie.png" alt="">
+          <p>With 27 years of experience in education, 11 of which she has practiced as a school counselor, Colleen Neal focuses her services across the lifespan.
+             A unique person-centered approach is used for children, teens and adults, with integration of cognitive behavioral and solution focused therapeutic methods.
+          </p>
+          <p>
+            Colleen and her husband are parents to 2 adult daughters.
+            She graduated from University of Houston Clear Lake in 2005 with a Master of Science in Counseling, is a Licensed Professional Counselor in the state of Texas, and holds a certification as a National Certified Counselor.
+            Organizations of which she is a member include Texas Counseling Association and American Counseling Association.
+          </p>
+        </div>
+      </div>
+      <section class="sign-up">
+        <div class="sign-up-background"></div>
+        <div class="content">
+          <form id="ajax-contact" action="mailer.php" method="post">
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" name="first-name" value="">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" type="text" name="last-name" value="">
+            <label for="email">Email Address</label>
+            <input id="email" type="text" name="email" value="">
+            <button type="submit" name="button">Get Started</button>
+          </form>
+        </div>
+      </section>
+    </section>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

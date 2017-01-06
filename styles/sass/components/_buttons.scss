@@ -1,0 +1,8 @@
+.nav-button {
+  background-color: $c-nav-button-background;
+  color: $c-nav-button-text;
+  border: none;
+}
+.nav-button:hover {
+  color: $c-nav-button-text-hover;
+}
