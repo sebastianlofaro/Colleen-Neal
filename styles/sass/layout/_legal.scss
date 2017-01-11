@@ -1,9 +1,12 @@
 // Legal Styles
 
 ul {
+  padding: 10px;
   list-style: none;
   background-color: rgba(223,222,221,.9);
   li {
+    margin-top: 10px;
+    margin-bottom:10px;
     a {
       text-decoration: none;
       font-family: $work-sans;
