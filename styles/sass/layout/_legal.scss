@@ -1,0 +1,13 @@
+// Legal Styles
+
+ul {
+  list-style: none;
+  background-color: rgba(223,222,221,.9);
+  li {
+    a {
+      text-decoration: none;
+      font-family: $work-sans;
+      color: $c-form-text;
+    }
+  }
+}
