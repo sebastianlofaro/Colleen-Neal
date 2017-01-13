@@ -19,12 +19,13 @@
     <a class="phone" href="tel:+1-281-508-2566">281-508-2566</a>
   </header>
   <div class="wrapper">
-    <h1 class="name">Colleen Neal</h1>
-    <h1 class="title">MS, LPC, NCC</h1>
+    <div class="name-wrapper">
+      <h1 class="name">Colleen Neal</h1>
+      <h1 class="title">MS, LPC, NCC</h1>
+    </div>
     <section class="main-content">
       <div class="about">
-        <div class="blur"></div>
-        <div class="content">
+        <div class="container">
           <img src="img/selfie.jpg" alt="">
           <p>With 27 years of experience in education, 11 of which she has practiced as a school counselor, Colleen Neal focuses her services across the lifespan.
              A unique person-centered approach is used for children, teens and adults, with integration of cognitive behavioral and solution focused therapeutic methods.
@@ -35,17 +36,26 @@
             Organizations of which she is a member include Texas Counseling Association and American Counseling Association.
           </p>
         </div>
+
       </div>
       <section class="sign-up">
-        <div class="sign-up-background"></div>
         <div class="content">
           <form id="ajax-contact" action="mailer.php" method="post">
-            <label for="first-name">First Name</label>
-            <input id="first-name" type="text" name="first-name" value="">
-            <label for="last-name">Last Name</label>
-            <input id="last-name" type="text" name="last-name" value="">
-            <label for="email">Email Address</label>
-            <input id="email" type="text" name="email" value="">
+            <div id="namef">
+              <div id="fnameg" class="nameg">
+                <label for="first-name">First Name</label>
+                <input id="first-name" type="text" name="first-name" value="">
+              </div>
+              <div id="lnameg" class="nameg">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" type="text" name="last-name" value="">
+              </div>
+
+            </div>
+            <div id="emailf">
+              <label for="email">Email Address</label>
+              <input id="email" type="text" name="email" value="">
+            </div>
             <button type="submit" name="button">Get Started</button>
           </form>
         </div>
