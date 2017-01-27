@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+.hide {
+  display: none;
+}
+
 .background {
   background-image: url("../img/beach.jpeg");
   background-size: cover;
@@ -37,7 +41,7 @@ header {
     right: 0;
     top: 0;
     margin: 5px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-decoration: none;
     font-family: $work-sans;
     color: $c-phone;
@@ -61,7 +65,7 @@ header {
 }
 
 .title {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .name-wrapper {
@@ -142,58 +146,69 @@ header {
     width: 60%;
     z-index: 10;
   }
-  form {
-    text-align: left;
-    @include desktop {
-      padding-top: 25%;
-    }
-    #namef {
-      @include desktop {
-        display: flex;
-      }
-      #fnameg {
+  .content {
+    .input {
+      form {
+        text-align: left;
         @include desktop {
-          margin-right: 20px;
+          padding-top: 25%;
+        }
+        #namef {
+          @include desktop {
+            display: flex;
+          }
+          #fnameg {
+            @include desktop {
+              margin-right: 20px;
+            }
+          }
+        }
+        #emailf {
+          @include desktop {
+            display: block;
+            width: 80%;
+            margin-top: 40px;
+          }
+        }
+        * {
+          font-family: $work-sans;
+          font-size: 1.7em;
+          display: block;
+          left: 0;
+        }
+        label {
+          color: $c-form-text;
+          width: 100%;
+          font-size: 2rem;
+          @include desktop {
+            font-size: 1.5rem;
+          }
+        }
+        input {
+          width: 100%;
+          font-size: 2rem;
+          @include desktop {
+            font-size: 1.5rem;
+          }
+        }
+        button {
+          background: none;
+          border: none;
+          margin-top: 50px;
+          margin: 0 auto;
+          color: $c-submit;
+        }
+        button:hover{
+          color: $c-submit-hover;
         }
       }
     }
-    #emailf {
-      @include desktop {
-        display: block;
-        width: 80%;
-        margin-top: 40px;
-      }
-    }
-    * {
+    .complete {
+      font-size: 2em;
       font-family: $work-sans;
-      font-size: 1.7em;
-      display: block;
-      left: 0;
-    }
-    label {
-      color: $c-form-text;
-      width: 100%;
-      font-size: 2rem;
-      @include desktop {
-        font-size: 1.5rem;
-      }
-    }
-    input {
-      width: 100%;
-      font-size: 2rem;
-      @include desktop {
-        font-size: 1.5rem;
-      }
-    }
-    button {
-      background: none;
-      border: none;
-      margin-top: 50px;
-      margin: 0 auto;
-      color: $c-submit;
-    }
-    button:hover{
-      color: $c-submit-hover;
+      color: $c-title;
+
     }
   }
+
 }

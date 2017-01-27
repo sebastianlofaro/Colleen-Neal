@@ -3,10 +3,11 @@ $(function() {
 
 
   $(form).submit(function(event) {
-    console.log("something is happening");
+    // Hide form
+    $("#input").addClass("hide");
+    $("#complete").removeClass("hide");
     event.preventDefault();
     var formData = $(form).serialize();
-    console.log(formData);
 
     $.ajax({
         type: 'POST',
