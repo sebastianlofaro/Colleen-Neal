@@ -35,17 +35,35 @@ header {
       width: 150px;
       text-align: left;
     }
+    button:hover {
+      cursor: pointer;
+    }
   }
-  .phone {
+  .contact-info {
+    display: flex;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 30px;
+    top: 30px;
     margin: 5px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    font-family: $work-sans;
-    color: $c-phone;
+    flex-direction: column;
+    justify-content: space-between;
+    .phone {
+      font-size: 1.5rem;
+      text-decoration: none;
+      font-family: $work-sans;
+      color: $c-phone;
+    }
+    .phone:hover {
+      cursor: pointer;
+    }
+    .address {
+      margin: 5px;
+      font-size: 1rem;
+      font-family: $work-sans;
+      color: $c-phone;
+    }
   }
+
 }
 
 .wrapper{
